@@ -1,0 +1,243 @@
+.card-team-container{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: center;
+    column-gap: 100px;
+}
+
+.employee-card{
+
+
+    position: relative;
+    border-radius: 24px;
+
+    width: 251px;
+    height: 260px;
+flex-shrink: 0;
+background: white;
+cursor: pointer;
+transition: 0.8s;
+}
+
+.emloye-card-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #584475;
+    z-index: 10;
+    border-radius: 9px 13px 22px 23px;
+    transform: rotateY(180deg);
+    display: none;
+    transition: 0.8s;
+
+}
+
+.emloye-card-overlay ul{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: white;
+    font-family: Abhaya Libre;
+    font-weight: 400;
+}
+
+.employee-card .logo{
+    position: absolute;
+    right: 18px;
+    top: 0px;
+    width: 30px;
+}
+
+/* .employee-card .half-top{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #584475;
+    border-radius: 11px 11px 0px 0px;
+} */
+
+.employee-card .half-top {
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #6E4A8E, #584475, #4A86E8);
+    border-radius: 11px 11px 0px 0px;
+    background-size: 400% 400%;
+    animation: gradient1 10s ease infinite;
+}
+
+@keyframes gradient1 {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+.ourteam-sec{
+    padding: 25px 86px;
+    background: radial-gradient(circle, #1e0038, #00013565, #30013b,rgb(32, 3, 59),rgb(0, 0, 54));
+    background-size: 400% 400%;
+    animation: gradient 25s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.emloyee-pic{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #999999;
+    border-radius: 50%;
+    z-index: 2;
+}
+.emloyee-pic .employee{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.employee-title{
+    text-align: center;
+    color: #1a1212;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+width: 100%;
+    color: #000;
+text-align: center;
+font-family: Abhaya Libre;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.employee-subtitle{
+    text-align: center;
+    color: #1a1212;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 75%;
+color: #000;
+text-align: center;
+font-family: Abhaya Libre;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+width: 100%;
+}
+
+.employee-email{
+    color: #000;
+    text-align: center;
+    font-family: Abhaya Libre;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70%;
+}
+.social-media-employee{
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    display: flex;
+    gap: 10px;
+}
+
+.social-media-employee a{
+    width: 25px;
+    height: 25px;
+    background-color: #715893;
+    border-radius: 50%;
+    padding: 5px;
+}
+.social-media-employee img{
+width: 100%;
+max-width: 100%;
+height: 100%;
+}
+
+
+@media (max-width: 768px) {
+   .emloye-card-overlay ul{
+    margin: 0;
+    padding: 21px;
+    width: 100%;
+    line-height: 1;
+    font-size: 9px;
+   }
+    .ourteam-sec{
+     padding: 84px 15px;
+
+    }
+
+    .card-team-container{
+        row-gap: 18px;
+        column-gap: 20px;
+    }
+    .employee-card{
+        width: 162px;
+        height: 203px;
+    }
+    .employee-title{
+        top: 57%;
+        font-size: 17px;
+        /* width: 90%; */
+        padding: 0 3px;
+    }
+    .employee-subtitle{
+        top: 85%;
+        font-size: 11px;
+    }
+    .employee-email{
+        font-size: 10px;
+        top: 70%;
+    }
+    .social-media-employee{
+        top: 86%;
+    }
+    .employee-card .logo{
+        right: 8px;
+        top: -9px;
+    }
+}

@@ -1,0 +1,336 @@
+footer{
+    top: 100%;
+}
+.about-us{
+    background: #A6C6DF;
+    width: 100vw;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 130px;
+    
+}
+
+.top-left{
+    width: 270px;
+    transition: 0,6s;
+  }
+  .top-right{
+    width: 343px;
+    transition: 0.6s;
+  }
+  .bottom-left{
+    
+    width: 240px
+  }
+  .bottom-right{
+    width: 300px;
+  }
+.about-us img{
+    position: absolute;
+}
+.about-us .top-left{
+left: -180px;
+top: -180px;
+}
+
+.about-us .top-right{
+    right: -180px;
+    top: -180px;
+    display: none;
+    transition: 0.6s;
+}
+
+.about-us .bottom-left{
+    top: 290px;
+    left:400px;
+    display: none;
+    transition: 0.6s;
+}
+
+.about-us .bottom-right{
+    top: 359px;
+    right:400px;
+    display: none;
+    transition: 0.6s;
+
+
+}
+.about-us, .our-vis-mis, .social-media-about {
+    transition: opacity 0.5s, transform 0.9s;
+  }
+  
+
+.who-we{
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+top:1%;
+text-align: center;
+width: 61%;
+transition: 0.6s;
+}
+
+
+.who-we .who-title{
+    color: #000;
+    font-family: Abhaya Libre;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    top: -1000px;
+    transition: 0.6s;
+}
+
+.who-we .who-dec{
+    color: #000;
+    text-align: center;
+    font-family: Abhaya Libre;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    display:none;
+    transition: 1s;
+
+}
+
+.our-vis-mis{
+    width: 70%;
+display: flex;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+top: 12%;
+padding: 20px;
+gap: 20px;
+opacity: 0;
+transition: 0.6s;
+}
+
+.our-vis-mis div{
+    
+}
+
+.our-vis-mis div .title{
+    color: #000;
+font-family: Abhaya Libre;
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: center;
+}
+
+.our-vis-mis div p{
+    color: #000;
+text-align: center;
+font-family: Abhaya Libre;
+font-size: 26px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.social-media-about{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.6s;
+    top: 15%;
+    justify-content: center;
+    align-items: center;
+
+}
+    
+.social-media-about .title-social-about{
+    color: #000;
+    font-family: Abhaya Libre;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.social-media-about .social-desc{
+    color: #000;
+    text-align: center;
+    font-family: Abhaya Libre;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+
+}
+
+.social-media-about .about-img-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.grid-item {
+  text-align: center; 
+  position: relative;
+  width: 133px;/* لمحاذاة الصور في وسط الخلية */
+}
+
+.grid-item img {
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;/* لضمان تناسب الصور داخل الخلية */
+}
+
+
+
+@media ( max-width : 1226px){
+    .header .container .header-list{
+        gap: 14px;
+        font-size: 15px;
+    }
+    .search-container{
+        width: 191px;
+        height: 41px;
+    }
+    .who-we .who-title{
+        font-size: 65px;
+    }
+    .who-we .who-dec{
+        font-size: 24px;
+    }
+    .our-vis-mis div .title{
+        font-size: 36px;
+    }
+
+    footer .container{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .subsc-container{
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 874px) {
+
+    .our-vis-mis{
+        top: 22% !important ;
+    }
+    .social-media-about{
+        top: 32% !important;
+    }
+    .about-us{
+        position: relative !important;
+    top: 67px !important;
+    height: 1003px !important ;
+    }
+
+    .about-us .bottom-left{
+        display: none !important;
+    }
+    .about-us .bottom-right{
+        display: none !important;
+    }
+    .about-us .top-left{
+      width: 68px;
+      left: -9px !important;
+    }
+    .about-us .top-right{
+        width: 90px;
+        right: -12px !important;
+    }
+    .about-us .who-we{
+        position: relative;
+        top: auto;
+        left: auto;
+        text-align: center;
+        padding: 37px 36px 0px 37px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+    .about-us .who-we .who-title{
+        font-size: 30px;
+    }
+    .about-us .who-we .who-dec{
+        display: block;
+        color: #000;
+        text-align: center;
+        font-family: Abhaya Libre;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal
+    }
+    .mobile-footer{
+        position: absolute;
+        top: unset !important;
+    }
+    .our-vis-mis div .title {
+        color: #000;
+        font-family: Abhaya Libre;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+    }
+    .our-vis-mis div p {
+        color: #000;
+        text-align: center;
+        font-family: Abhaya Libre;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .our-vis-mis {
+        width: 84%;
+        display: flex !important;
+        flex-direction: column;
+    }
+    .social-media-about{
+        display: flex !important;
+        width: 90%;
+    }
+    .title-social-about{
+        font-size: 20px !important;
+    }
+    .social-desc{
+        font-size: 15px !important;
+
+    }
+    .social-media-about .about-img-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .grid-item img{
+        position: unset;
+    }
+    .about-us{
+        height: max-content;
+    }
+    
+    
+}
